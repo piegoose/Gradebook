@@ -1,5 +1,7 @@
 package com.piegoose;
 
+import com.github.javafaker.Faker;
+
 public class Student extends Person {
     private double grade;
 
@@ -7,7 +9,6 @@ public class Student extends Person {
         super(name, age);
         this.grade = grade;
     }
-
 
 
     public double getGrade() {
