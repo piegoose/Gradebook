@@ -1,34 +1,43 @@
 package com.piegoose;
-
-import com.piegoose.*;
-
 import java.util.ArrayList;
 
 // todo dodac biblioteke faker / random ktora generuje uzytkownikow
 // todo kazda klasa ma wychodchowawce (ClassSupervisor)
+
 public class Main {
     public static void main(String[] args) {
 
         ArrayList<Person> users = new ArrayList<>();
-        Student student = new Student("Jedrzej", 16, 5);
-        Student student2 = new Student("Marek", 16, 3);
-        Teacher teacher = new Teacher("Tomasz", 50, "Matematyka");
         SchoolClass schoolClass = new SchoolClass("Klasa A");
         SchoolClassDatabase schoolClassDatabase = new SchoolClassDatabase();
-        // dodanie obiektow
-        users.add(student);
-        users.add(student2);
-        users.add(teacher);
+        System.out.println(schoolClassDatabase.generateRandomStudent());
 
 
 
-        schoolClass.addStudent(student);
-        schoolClass.addStudent(student2);
-        schoolClass.displayStudents();
-        schoolClassDatabase.addSchoolClassToDatabase(schoolClass);
-        schoolClassDatabase.removeSchoolClass(schoolClass.getSchoolClassName());
-        schoolClassDatabase.removeSchoolClass(schoolClass.getSchoolClassName());
-        schoolClass.displayStudents();
+
+
+
+
+
+
+
+
+
+
+
+//        // dodanie obiektow
+//        users.add(student);
+//        users.add(student2);
+//        users.add(teacher);
+//
+//
+//        schoolClass.addStudent(student);
+//        schoolClass.addStudent(student2);
+//        schoolClass.displayStudents();
+//        schoolClassDatabase.addSchoolClassToDatabase(schoolClass);
+//        schoolClassDatabase.removeSchoolClass(schoolClass.getSchoolClassName());
+//        schoolClassDatabase.removeSchoolClass(schoolClass.getSchoolClassName());
+//        schoolClass.displayStudents();
 
 
 
